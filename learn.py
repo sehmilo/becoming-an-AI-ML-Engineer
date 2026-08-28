@@ -7,9 +7,9 @@ def get_choices():
     computer_choice = random.choice(options)
     return choices
 
-def check_win(player, computer):
-    print("You chose " + player + ", computer chose " + computer)
-    if player == computer:
+def check_win(player_choice, computer_choice):
+    print(f"You chose {player_choice}, computer chose {computer_choice}")
+    if player_choice == computer_choice:
         return "It's a tie!"
 
-print(check_win("rock", "scissors"))
+print(check_win())
